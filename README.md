@@ -17,7 +17,7 @@ the ImmunoChip support file:
 
 `cat Immuno_BeadChip_11419691_B.csv | python select.py -f Chr,Name,AlleleA_ProbeSeq,AlleleB_ProbeSeq  | grep ^19,`
 
-[submit.sh](https://github.com/pontikos/dilstats/blob/master/submit.sh):
+[submit.bash](https://github.com/pontikos/dilstats/blob/master/submit.bash):
 
 Bash script example for submitting jobs to the queue, in the hope that some of you might benefit from this,
 here's an example of a bash script which you can use to submit jobs  to the queue.
