@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# strict mode for shell, makes sure all commands exit with 0 and that all
+# strict mode for shell, makes sure all commands exit with 0 and that all variables are defined
 # from my experience i particularly recommend you use this as often as possible!
 set -e
 set -u
