@@ -25,6 +25,11 @@ I think it's a good example of passing parameters to a bash script,  function ca
 The general idea is to do all the directory creation and job submitting in bash and to how have the actual jobs
 written as Rscripts which use the optparse library to parse command line arguments.
 
+[splitby.py](https://github.com/pontikos/dilstats/blob/master/splitby.py)
+
+Python script to split Illumina file by SNP or by Sample.  Will create a new file for each SNP or for each Sample.
+
+
 
 
 
