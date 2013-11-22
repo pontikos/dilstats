@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Dilstats : Code examples which should be useful for the dilstats team." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Dilstats</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/pontikos/dilstats">View on GitHub</a>
+
+          <h1 id="project_title">Dilstats</h1>
+          <h2 id="project_tagline">Code examples which should be useful for the dilstats team.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/pontikos/dilstats/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/pontikos/dilstats/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="dilstats-code-snippets" class="anchor" href="#dilstats-code-snippets"><span class="octicon octicon-link"></span></a>DILStats Code Snippets</h1>
+
+<p>Code examples which should be useful for the rest of the dilstats team.</p>
+
+<p><a href="https://github.com/pontikos/dilstats/blob/master/select.py">select.py</a>:</p>
+
+<p>This is a basic python script for selecting columns from text file given header name.
+An extremely trivial piece of code on which you can build to
+add conditions to only select certain lines etc.
+Essentially this is not really doing anything that you can't already
+do with awk/perl but it's just much easier (IMO) to build upon and
+extend.
+Here's an example of how you could use this script (let's call it
+select.py) if you wanted to only select probe sequences on chr 19 from
+the ImmunoChip support file:</p>
+
+<p><code>cat Immuno_BeadChip_11419691_B.csv | python select.py -f Chr,Name,AlleleA_ProbeSeq,AlleleB_ProbeSeq  | grep ^19,</code></p>
+
+<p><a href="https://github.com/pontikos/dilstats/blob/master/submit.bash">submit.bash</a>:</p>
+
+<p>Bash script example for submitting jobs to the queue, in the hope that some of you might benefit from this,
+here's an example of a bash script which you can use to submit jobs  to the queue.
+I think it's a good example of passing parameters to a bash script,  function calling and filename manipulation.
+The general idea is to do all the directory creation and job submitting in bash and to how have the actual jobs
+written as Rscripts which use the optparse library to parse command line arguments.</p>
+
+<p><a href="https://github.com/pontikos/dilstats/blob/master/splitby.py">splitby.py</a></p>
+
+<p>Python script to split Illumina file by SNP or by Sample.  Will create a new file for each SNP or for each Sample.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Dilstats maintained by <a href="https://github.com/pontikos">pontikos</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
