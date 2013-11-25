@@ -29,9 +29,9 @@ written as Rscripts which use the optparse library to parse command line argumen
 
 Python script to split Illumina file by SNP or by Sample.  Will create a new file for each SNP or for each Sample.
 
-[browser.py|https://github.com/dilstats/dilstats/blob/master/browser.py]
+[browser.py](https://github.com/dilstats/dilstats/blob/master/browser.py)
 
-Python script to interface with websites (HTTP GET/POST), retrieve web pages which can be parsed with [BeautifulSoup|http://www.crummy.com/software/BeautifulSoup/].
+Python script to interface with websites (HTTP GET/POST), retrieve web pages which can be parsed with [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/).
 
 
 
